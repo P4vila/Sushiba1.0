@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- CREDENCIALES APLICACION -->
+
+    <string name="app_name">Sushiba</string>
+    <string name="Desarrolladores">José Manuel Piñero y Luciana Perez </string>
+    <string name="Desarrollo">Desarrollado por:</string>
+    <string name="Version">Version 1.0.0</string>
+
+    <!-- LOGIN -->
+
+    <string name="title_login">LOGIN</string>
+    <string name="lbl_email">Email</string>
+    <string name="lbl_contraseña">Contraseña</string>
+    <string name="btn_entrar">Entrar</string>
+    <string name="lbl_crear_cuenta">¿No Tienes Cuenta?, Registrate</string>
+
+    <!-- REGISTRO-->
+
+    <string name="Title_Registro">REGISTRO</string>
+
+</resources>
