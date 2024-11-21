@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!-- Permiso para acceder a Internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,42 +15,45 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Sushiba"
         tools:targetApi="31">
-        <activity
-            android:name=".activity_Pantalla_Pago"
-            android:exported="false" />
-        <activity
-            android:name=".LoginActivity"
-            android:exported="false" />
-        <activity
-            android:name=".RegistroActivity"
-            android:exported="false" />
-        <!--
-CERRAMOS LA ETIQUETA ACTIVITY DE LA SPLASH, PARA METERLE DENTRO EL INTENT-FILTER
-      COPIADPO DE ABAJO DEL MAINACTIVITY, ESTO HARÁ QUE SALGA LA PANTALLA DE SPLASH LA PRIMERA
-      AL EJECUTAR LA APLICACIÓN. LE PONEMOS LAUNCHER Y EL EXPORTED EN TRUE
-        -->
+
+        <!-- SplashActivity: La pantalla que aparece al abrir la app -->
         <activity
             android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <!--
- EL ANDROID INTENT AQUI LO TENEMOS QUE PONER EN DEFAULT PARA QUE NO HAGA CONFLICTO
-        CON EL LAUNCHER DE LA SPLASH ACTIVITY
-        -->
+
+        <!-- LoginActivity: La pantalla que se muestra después de la SplashScreen -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Otras actividades -->
+        <activity
+            android:name=".activity_Pantalla_Pago"
+            android:exported="false" />
+        <activity
+            android:name=".RegistroActivity"
+            android:exported="false" />
+
+        <!-- MainActivity: Principal actividad de la app si es necesario -->
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>
