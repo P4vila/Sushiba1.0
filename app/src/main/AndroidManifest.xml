@@ -13,16 +13,19 @@
         android:theme="@style/Theme.Sushiba"
         tools:targetApi="31">
         <activity
+            android:name=".activity_Pantalla_Pago"
+            android:exported="false" />
+        <activity
             android:name=".LoginActivity"
             android:exported="false" />
         <activity
             android:name=".RegistroActivity"
             android:exported="false" />
-
-      <!--CERRAMOS LA ETIQUETA ACTIVITY DE LA SPLASH, PARA METERLE DENTRO EL INTENT-FILTER
+        <!--
+CERRAMOS LA ETIQUETA ACTIVITY DE LA SPLASH, PARA METERLE DENTRO EL INTENT-FILTER
       COPIADPO DE ABAJO DEL MAINACTIVITY, ESTO HARÁ QUE SALGA LA PANTALLA DE SPLASH LA PRIMERA
-      AL EJECUTAR LA APLICACIÓN. LE PONEMOS LAUNCHER Y EL EXPORTED EN TRUE-->
-
+      AL EJECUTAR LA APLICACIÓN. LE PONEMOS LAUNCHER Y EL EXPORTED EN TRUE
+        -->
         <activity
             android:name=".SplashActivity"
             android:exported="true">
@@ -32,10 +35,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <!-- EL ANDROID INTENT AQUI LO TENEMOS QUE PONER EN DEFAULT PARA QUE NO HAGA CONFLICTO
-        CON EL LAUNCHER DE LA SPLASH ACTIVITY-->
-
+        <!--
+ EL ANDROID INTENT AQUI LO TENEMOS QUE PONER EN DEFAULT PARA QUE NO HAGA CONFLICTO
+        CON EL LAUNCHER DE LA SPLASH ACTIVITY
+        -->
         <activity
             android:name=".MainActivity"
             android:exported="true">
