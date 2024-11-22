@@ -45,7 +45,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity> <!-- LoginActivity: La pantalla que se muestra después de la SplashScreen -->
-        <activity
+
+       <activity
             android:name=".LoginActivity"
             android:exported="true" >
             <intent-filter>
