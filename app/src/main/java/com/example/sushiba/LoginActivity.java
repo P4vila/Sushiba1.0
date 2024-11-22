@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -16,6 +17,20 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+
+//CONFIGURACIÓN PARA QUE AL PULSAR EL TEXTO DE NO TIENES CUENTA, VAYA A LA ACTIVITY REGISTRO
+        TextView textRegistro = findViewById(R.id.textRegistro);
+
+        textRegistro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Crear la intención para ir a la actividad de registro
+                Intent intent = new Intent(LoginActivity.this, RegistroActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
         // AQUI EMPIEZA LA CONFIGURACION DE GLIDE
         // Obtener la referencia al ImageView con el ID "imageView2"
