@@ -6,7 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activity_Pantalla_Pago"
-    tools:ignore="ExtraText">
+    tools:ignore="ExtraText"
+    android:name="com.example.miapp.ui.Pantalla_Pago"
+    >
 
 
     <!-- Fuente --><![CDATA[
@@ -257,12 +259,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.645" />
 
-    <RadioGroup
-        android:id="@+id/radioGroup2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:layout_editor_absoluteX="236dp"
-        tools:layout_editor_absoluteY="333dp" /> <!-- Cambia este color al verde que quieras -->
+    <!-- Cambia este color al verde que quieras -->
         app:itemIconTint="@color/white" <!-- Color de los íconos -->
         app:itemTextColor="@color/white" <!-- Color del texto -->
         app:menu="@menu/bottom_nav_menu" />
