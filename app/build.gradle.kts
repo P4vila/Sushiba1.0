@@ -36,6 +36,10 @@ dependencies {
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
+    implementation ("com.google.android.material:material:1.8.0")
+
+
+
 
     // Agregar Glide con la sintaxis correcta en Kotlin DSL
     implementation("com.github.bumptech.glide:glide:4.15.1")
