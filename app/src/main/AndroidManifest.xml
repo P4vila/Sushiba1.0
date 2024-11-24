@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-
     <!-- Permiso para acceder a Internet -->
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -15,54 +14,43 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Sushiba"
         tools:targetApi="31">
-
+        <activity
+            android:name=".mi_carrito"
+            android:exported="false" />
         <!-- SplashActivity: La pantalla que aparece al abrir la app -->
         <activity
             android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <!-- LoginActivity: La pantalla que se muestra después de la SplashScreen -->
+        </activity> <!-- LoginActivity: La pantalla que se muestra después de la SplashScreen -->
         <activity
             android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-        </activity>
-
-        <!-- Pantalla de registro -->
+        </activity> <!-- Pantalla de registro -->
         <activity
             android:name=".RegistroActivity"
-            android:exported="false" />
-
-        <!-- Pantalla principal -->
+            android:exported="false" /> <!-- Pantalla principal -->
         <activity
             android:name=".MainActivity"
-            android:exported="true" />
-
-        <!-- Pantalla de perfil -->
+            android:exported="true" /> <!-- Pantalla de perfil -->
         <activity
             android:name=".Activity_perfil"
-            android:exported="false" />
-
-        <!-- Pantalla Home -->
+            android:exported="false" /> <!-- Pantalla Home -->
         <activity
             android:name=".PantallaHomeUramaki"
-            android:exported="false" />
-
-        <!-- Pantalla de pago -->
+            android:exported="false" /> <!-- Pantalla de pago -->
         <activity
             android:name=".activity_Pantalla_Pago"
             android:exported="true" />
-
-
-
     </application>
 
 </manifest>

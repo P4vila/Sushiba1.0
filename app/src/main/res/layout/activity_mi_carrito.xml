@@ -5,62 +5,53 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".soporte_ayuda">
-
+    tools:context=".mi_carrito">
 
     <TextView
-        android:id="@+id/textView16"
+        android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Soporte y Ayuda"
+        android:text="Mi Carrito"
         android:textSize="30sp"
-        app:layout_constraintBottom_toTopOf="@+id/btn_Ayuda_a_Mesa"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.068" />
 
-    <ImageView
-        android:id="@+id/imageView12"
-        android:layout_width="143dp"
-        android:layout_height="169dp"
+    <Button
+        android:id="@+id/btn_confirmar"
+        android:layout_width="170dp"
+        android:layout_height="58dp"
+        android:backgroundTint="#F44336"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="CONFIRMAR"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_pagar_total"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.524"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintVertical_bias="0.801" />
 
     <Button
         android:id="@+id/btn_pagar_total"
-        android:layout_width="265dp"
-        android:layout_height="66dp"
+        android:layout_width="170dp"
+        android:layout_height="58dp"
         android:backgroundTint="#F44336"
         android:fontFamily="@font/montserrat_semibold"
         android:text="PAGAR TOTAL"
         android:textColor="@android:color/white"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView12"
-        app:layout_constraintVertical_bias="0.237" />
-
-    <Button
-        android:id="@+id/btn_Ayuda_a_Mesa"
-        android:layout_width="265dp"
-        android:layout_height="66dp"
-        android:backgroundTint="#F44336"
-        android:fontFamily="@font/montserrat_semibold"
-        android:text="AYUDA A MESA"
-        android:textColor="@android:color/white"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/imageView12"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.889"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.774" />
+        app:layout_constraintVertical_bias="0.801" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
