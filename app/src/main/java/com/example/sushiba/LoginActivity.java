@@ -1,10 +1,13 @@
 package com.example.sushiba;
 
+import static com.example.sushiba.R.id.imageView6;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -16,6 +19,20 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+
+//CONFIGURACIÓN PARA QUE AL PULSAR EL TEXTO DE NO TIENES CUENTA, VAYA A LA ACTIVITY REGISTRO
+        TextView textRegistro = findViewById(R.id.textRegistro);
+
+        textRegistro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Crear la intención para ir a la actividad de registro
+                Intent intent = new Intent(LoginActivity.this, RegistroActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
         // AQUI EMPIEZA LA CONFIGURACION DE GLIDE
         // Obtener la referencia al ImageView con el ID "imageView2"
@@ -30,6 +47,22 @@ public class LoginActivity extends AppCompatActivity {
                 .into(imageView2); // El ImageView donde se cargará la imagen
 
         // AQUI TERMINA LA CONFIGURACION DE GLIDE
+
+        // FOTO CON GLIDE DE PERFIL DE CAMILA
+        ImageView imageView6 = findViewById(R.id.imageView6);
+
+        // URL directa de la imagen que quieras usar
+        String imageUrl6 = "https://live.staticflickr.com/65535/54158695005_ab64ab8aa5_q.jpg";
+
+
+        // Usar Glide para cargar la imagen en el ImageView
+        Glide.with(this)
+                .load(imageUrl6)
+                .into(imageView6);
+
+
+
+
 
         // Encuentro el botón en el xml de LoginActivity
         Button btnEntrar = findViewById(R.id.btnEntrar);
