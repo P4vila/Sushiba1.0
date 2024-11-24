@@ -153,10 +153,10 @@
         android:id="@+id/imageView10"
         android:layout_width="49dp"
         android:layout_height="44dp"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="25dp"
-        tools:layout_editor_absoluteY="529dp"
-        tools:srcCompat="@tools:sample/avatars"
-        tools:ignore="MissingConstraints"/>
+        tools:layout_editor_absoluteY="592dp"
+        tools:srcCompat="@tools:sample/avatars" />
 
     <ImageView
         android:id="@+id/arrowIcon"
