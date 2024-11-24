@@ -8,20 +8,22 @@
     tools:context=".Activity_perfil">
 
     <!--USUARIO -->
+
+    <!--TEXTO DE PERFIL DEL NOMBRE  ( USUARIO )-->
+
     <TextView
         android:id="@+id/textView10"
-        android:layout_width="136dp"
-        android:layout_height="47dp"
+        android:layout_width="110dp"
+        android:layout_height="46dp"
         android:text="Mi perfil"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.541"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.084" />
+        app:layout_constraintVertical_bias="0.039" />
 
-    <!--TEXTO DE PERFIL DEL NOMBRE  ( USUARIO )-->
     <TextView
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
@@ -115,10 +117,10 @@
         android:id="@+id/imageView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="143dp"
-        tools:layout_editor_absoluteY="109dp"
-        tools:srcCompat="@tools:sample/avatars"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="99dp"
+        tools:srcCompat="@tools:sample/avatars" />
 
     <ImageView
         android:id="@+id/imageView7"
@@ -126,7 +128,8 @@
         android:layout_height="41dp"
         tools:layout_editor_absoluteX="25dp"
         tools:layout_editor_absoluteY="345dp"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@tools:sample/avatars"
+        tools:ignore="MissingConstraints"/>
 
     <ImageView
         android:id="@+id/imageView8"
@@ -134,7 +137,8 @@
         android:layout_height="45dp"
         tools:layout_editor_absoluteX="25dp"
         tools:layout_editor_absoluteY="403dp"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@tools:sample/avatars"
+        tools:ignore="MissingConstraints"/>
 
     <ImageView
         android:id="@+id/imageView9"
@@ -142,7 +146,8 @@
         android:layout_height="42dp"
         tools:layout_editor_absoluteX="25dp"
         tools:layout_editor_absoluteY="467dp"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@tools:sample/avatars"
+        tools:ignore="MissingConstraints"/>
 
     <ImageView
         android:id="@+id/imageView10"
@@ -150,9 +155,79 @@
         android:layout_height="44dp"
         tools:layout_editor_absoluteX="25dp"
         tools:layout_editor_absoluteY="529dp"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@tools:sample/avatars"
+        tools:ignore="MissingConstraints"/>
 
-    <!-- PERFIL DE CAMILA -->
+    <ImageView
+        android:id="@+id/arrowIcon"
+        android:layout_width="25dp"
+        android:layout_height="26dp"
+        android:layout_gravity="end"
+        android:padding="8dp"
+        android:src="@drawable/icon_flecha_der"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="31dp"
+        android:layout_gravity="end"
+        android:padding="8dp"
+        android:src="@drawable/icon_flecha_der"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.919"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.585"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="31dp"
+        android:layout_gravity="end"
+        android:padding="8dp"
+        android:src="@drawable/icon_flecha_der"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.919"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.67"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="31dp"
+        android:layout_gravity="end"
+        android:padding="8dp"
+        android:src="@drawable/icon_flecha_der"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.919"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.774"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:layout_width="32dp"
+        android:layout_height="36dp"
+        android:layout_gravity="end"
+        android:padding="8dp"
+        android:src="@drawable/icon_flecha_izq"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.018"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        tools:ignore="MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

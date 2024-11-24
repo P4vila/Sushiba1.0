@@ -281,14 +281,15 @@
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>
 
+
     <FrameLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="-1dp">
 
         <!-- Este es el ImageButton que queremos mover -->
     </FrameLayout>
-
 
     <RadioButton
         android:id="@+id/radioPaypal"
