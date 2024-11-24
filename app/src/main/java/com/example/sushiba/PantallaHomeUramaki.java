@@ -24,7 +24,14 @@ public class PantallaHomeUramaki extends AppCompatActivity {
 
      //   MENÚ DE NAVEGACIÓN
          BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
-        // Establecer el listener para manejar la navegación
+        // PREGUNTAR JUAN COMO ASOCIAR ITEMS DEL MENU NAV A LAS ACTIVITIES
+
+
+
+
+
+
+
 
 
 

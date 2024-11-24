@@ -8,5 +8,7 @@
     <color name="marron">#9F7F6C</color>
     <color name="marron_claro_back">#D1BCAE</color>
     <color name="naranja_pulsado">#DA552F</color>
+    <color name="naranja_transparente">#4DFF5722</color>  <!-- 30% opacidad -->
+
   <!-- TE AMO cielo -->
 </resources>
