@@ -25,30 +25,7 @@ public class PantallaHomeUramaki extends AppCompatActivity {
      //   MENÚ DE NAVEGACIÓN
          BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
         // Establecer el listener para manejar la navegación
-        bottomNavigationView.setOnItemSelectedListener(item -> {
-            switch (item.getItemId()) {
-                case R.id.nav_home:
-                    Intent homeIntent = new Intent(PantallaHomeUramaki.this, PantallaHomeUramaki.class);
-                    startActivity(homeIntent);
-                    return true;
 
-                case R.id.carro:
-                    // Manejar clic en "Cart"
-                    return true;
-
-                case R.id.info:
-                    // Manejar clic en "Info"
-                    return true;
-
-                case R.id.nav_profile:
-                    Intent profileIntent = new Intent(PantallaHomeUramaki.this, Activity_perfil.class);
-                    startActivity(profileIntent);
-                    return true;
-
-                default:
-                    return false;
-            }
-        });
 
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {

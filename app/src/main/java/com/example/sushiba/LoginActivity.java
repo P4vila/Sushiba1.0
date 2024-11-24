@@ -48,21 +48,6 @@ public class LoginActivity extends AppCompatActivity {
 
         // AQUI TERMINA LA CONFIGURACION DE GLIDE
 
-        // FOTO CON GLIDE DE PERFIL DE CAMILA
-        ImageView imageView6 = findViewById(R.id.imageView6);
-
-        // URL directa de la imagen que quieras usar
-        String imageUrl6 = "https://live.staticflickr.com/65535/54158695005_ab64ab8aa5_q.jpg";
-
-
-        // Usar Glide para cargar la imagen en el ImageView
-        Glide.with(this)
-                .load(imageUrl6)
-                .into(imageView6);
-
-
-
-
 
         // Encuentro el botón en el xml de LoginActivity
         Button btnEntrar = findViewById(R.id.btnEntrar);
