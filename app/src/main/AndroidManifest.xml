@@ -15,17 +15,12 @@
         android:theme="@style/Theme.Sushiba"
         tools:targetApi="31">
         <activity
-<<<<<<< HEAD
             android:name=".PantallaHomeNigiri"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".PantallaHomeFritos"
             android:exported="false" />
 
-=======
-            android:name=".mi_carrito"
-            android:exported="false" />
->>>>>>> 6de82aa093b43f217ba52a246b1576da6126d4c0
         <!-- SplashActivity: La pantalla que aparece al abrir la app -->
         <activity
             android:name=".SplashActivity"
@@ -56,7 +51,7 @@
             android:exported="false" /> <!-- Pantalla Home -->
         <activity
             android:name=".PantallaHomeUramaki"
-<<<<<<< HEAD
+
             android:exported="true">
         <intent-filter>
             <action android:name="android.intent.action.VIEW" />
@@ -67,9 +62,7 @@
 
 
         <!-- Pantalla de pago -->
-=======
-            android:exported="false" /> <!-- Pantalla de pago -->
->>>>>>> 6de82aa093b43f217ba52a246b1576da6126d4c0
+
         <activity
             android:name=".activity_Pantalla_Pago"
             android:exported="true" />
