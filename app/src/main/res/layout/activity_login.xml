@@ -120,6 +120,16 @@
         app:layout_constraintTop_toBottomOf="@+id/textRegistro"
         app:layout_constraintVertical_bias="0.184" />
 
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="422dp"
+        android:layout_height="271dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textOlvidada"
+        tools:srcCompat="@tools:sample/avatars" />
+
 
     <!-- View que se coloca debajo del ImageView -->
    <!-- <View

@@ -15,11 +15,22 @@
         android:theme="@style/Theme.Sushiba"
         tools:targetApi="31">
         <activity
-            android:name=".PantallaHomeNigiri"
+            android:name=".PantallaHomeRebozados"
             android:exported="true" />
+
+
         <activity
-            android:name=".PantallaHomeFritos"
-            android:exported="false" />
+            android:name=".PantallaHomeNigiri"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+
 
         <!-- SplashActivity: La pantalla que aparece al abrir la app -->
         <activity
@@ -31,6 +42,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity> <!-- LoginActivity: La pantalla que se muestra después de la SplashScreen -->
+
         <activity
             android:name=".LoginActivity"
             android:exported="true">
@@ -40,15 +52,54 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity> <!-- Pantalla de registro -->
+
+
         <activity
             android:name=".RegistroActivity"
-            android:exported="false" /> <!-- Pantalla principal -->
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".mi_carrito"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+
+
+
+
+        <!-- Pantalla principal -->
         <activity
             android:name=".MainActivity"
             android:exported="true" /> <!-- Pantalla de perfil -->
+
+
+
         <activity
             android:name=".Activity_perfil"
-            android:exported="false" /> <!-- Pantalla Home -->
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+
+
+
+        <!-- Pantalla Home -->
         <activity
             android:name=".PantallaHomeUramaki"
 
@@ -58,6 +109,17 @@
 
             <category android:name="android.intent.category.DEFAULT" />
         </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".soporte_ayuda"
+
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
 
 

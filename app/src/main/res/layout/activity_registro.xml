@@ -4,7 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/main"
     android:background="#FFFFFF"> <!-- Fondo blanco -->>
+
+
+
+
+
 
 
 
@@ -75,7 +81,7 @@
         android:layout_height="58dp"
         android:backgroundTint="@color/verde_claro"
         android:fontFamily="@font/montserrat_semibold"
-        android:text="Entrar"
+        android:text="Resgistrar"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -114,6 +120,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
         app:layout_constraintVertical_bias="0.444" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="422dp"
+        android:layout_height="271dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textRegistro"
+        tools:srcCompat="@tools:sample/avatars" />
+
+
 
 
     <!-- View que se coloca debajo del ImageView -->

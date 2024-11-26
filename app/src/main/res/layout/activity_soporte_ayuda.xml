@@ -31,6 +31,16 @@
         app:layout_constraintVertical_bias="0.524"
         tools:srcCompat="@tools:sample/avatars" />
 
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="4dp"
+        android:background="@color/verde_claro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/bottom_navigation_menu"
+        tools:layout_editor_absoluteX="-4dp" />
     <Button
         android:id="@+id/btn_pagar_total"
         android:layout_width="265dp"
@@ -48,7 +58,7 @@
         app:layout_constraintVertical_bias="0.237" />
 
     <Button
-        android:id="@+id/btn_Ayuda_a_Mesa"
+        android:id="@+id/btnmaestro"
         android:layout_width="265dp"
         android:layout_height="66dp"
         android:backgroundTint="#F44336"

@@ -1,6 +1,5 @@
 package com.example.sushiba;
 
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -14,24 +13,14 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 import com.bumptech.glide.Glide;
-import com.example.sushiba.Activity_perfil;
-import com.example.sushiba.R;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class PantallaHomeUramaki extends AppCompatActivity {
+public class PantallaHomeRebozados extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_pantalla_home_uramaki);
-
-     //   MENÚ DE NAVEGACIÓN
-            BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
-        // PREGUNTAR JUAN COMO ASOCIAR ITEMS DEL MENU NAV A LAS ACTIVITIES
-
-
-
+        setContentView(R.layout.activity_pantalla_home_rebozados);
 
         // Vincula los botones
         Button btnUramaki = findViewById(R.id.btnUramaki);
@@ -43,7 +32,7 @@ public class PantallaHomeUramaki extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Abre la actividad PantallaHomeUramaki
-                Intent intent = new Intent(PantallaHomeUramaki.this, PantallaHomeUramaki.class);
+                Intent intent = new Intent(PantallaHomeRebozados.this, PantallaHomeUramaki.class);
                 startActivity(intent);
             }
         });
@@ -52,7 +41,7 @@ public class PantallaHomeUramaki extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Abre la actividad PantallaHomeRebozados
-                Intent intent = new Intent(PantallaHomeUramaki.this, PantallaHomeRebozados.class);
+                Intent intent = new Intent(PantallaHomeRebozados.this, PantallaHomeRebozados.class);
                 startActivity(intent);
             }
         });
@@ -61,120 +50,81 @@ public class PantallaHomeUramaki extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Abre la actividad PantallaHomeNigiri
-                Intent intent = new Intent(PantallaHomeUramaki.this, PantallaHomeNigiri.class);
+                Intent intent = new Intent(PantallaHomeRebozados.this, PantallaHomeNigiri.class);
                 startActivity(intent);
             }
         });
+
+
+
         //  LA PRIMERA FOTO
         // Obtener la referencia al ImageView con el ID "imageView2"
-            ImageView imageView12 = findViewById(R.id.imageView12);
+        ImageView imageView12 = findViewById(R.id.imageView12);
 
         // URL directa de la imagen que quieras usar
-             String imageUrl = "https://live.staticflickr.com/65535/54154818646_c2218aef4f_z.jpg";
+        String imageUrl = "https://live.staticflickr.com/65535/54153966457_1c5a45b807_o.jpg";
 
         // Usar Glide para cargar la imagen en el ImageView
-             Glide.with(this) // Usamos "this" para pasar el contexto de la actividad
-                     .load(imageUrl) // URL de la imagen
-                     .into(imageView12); // El ImageView donde se cargará la imagen
+        Glide.with(this) // Usamos "this" para pasar el contexto de la actividad
+                .load(imageUrl) // URL de la imagen
+                .into(imageView12); // El ImageView donde se cargará la imagen
 
         // AQUI TERMINA LA CONFIGURACION DE GLIDE
 
         // LA SEGUNDA FOTO
         // Obtener la referencia al ImageView con el ID "imageView2"
-            ImageView imageView13 = findViewById(R.id.imageView13);
+        ImageView imageView13 = findViewById(R.id.imageView13);
 
         // URL directa de la imagen que quieras usar
-             String imageUrl2 = "https://live.staticflickr.com/65535/54154818641_34f04f4aef_z.jpg";
+        String imageUrl2 = "https://live.staticflickr.com/65535/54154819606_c38255479d_o.jpg";
 
         // Usar Glide para cargar la imagen en el ImageView
-              Glide.with(this) // Usamos "this" para pasar el contexto de la actividad
-                      .load(imageUrl2) // URL de la imagen
-                      .into(imageView13); // El ImageView donde se cargará la imagen
+        Glide.with(this) // Usamos "this" para pasar el contexto de la actividad
+                .load(imageUrl2) // URL de la imagen
+                .into(imageView13); // El ImageView donde se cargará la imagen
 
         // AQUI TERMINA LA CONFIGURACION DE GLIDE
 
         //  LA TERCERA FOTO
         // Obtener la referencia al ImageView con el ID "imageView2"
-              ImageView imageView14 = findViewById(R.id.imageView14);
+        ImageView imageView14 = findViewById(R.id.imageView14);
 
         // URL directa de la imagen que quieras usar
-             String imageUrl3 = "https://live.staticflickr.com/65535/54155105448_24c288259d_c.jpg";
+        String imageUrl3 = "https://live.staticflickr.com/65535/54154819601_455f3514ea_o.jpg";
 
         // Usar Glide para cargar la imagen en el ImageView
-              Glide.with(this) // Usamos "this" para pasar el contexto de la actividad
-                      .load(imageUrl3) // URL de la imagen
-                     .into(imageView14); // El ImageView donde se cargará la imagen
+        Glide.with(this) // Usamos "this" para pasar el contexto de la actividad
+                .load(imageUrl3) // URL de la imagen
+                .into(imageView14); // El ImageView donde se cargará la imagen
 
         // AQUI TERMINA LA CONFIGURACION DE GLIDE
 
-        //  LA CUARTA FOTO
-        // Obtener la referencia al ImageView con el ID "imageView2"
-             ImageView imageView15 = findViewById(R.id.imageView15);
-
-        // URL directa de la imagen que quieras usar
-             String imageUrl4 = "https://live.staticflickr.com/65535/54155105488_7d478d6257.jpg";
-
-        // Usar Glide para cargar la imagen en el ImageView
-             Glide.with(this) // Usamos "this" para pasar el contexto de la actividad
-                       .load(imageUrl4) // URL de la imagen
-                      .into(imageView15); // El ImageView donde se cargará la imagen
-
-        // AQUI TERMINA LA CONFIGURACION DE GLIDE
-
-        //  LA QUINTA FOTO
+        //  LA CUARTA  FOTO
         // Obtener la referencia al ImageView con el ID "imageView2"
         ImageView imageView16 = findViewById(R.id.imageView16);
 
         // URL directa de la imagen que quieras usar
-        String imageUrl5 = "https://live.staticflickr.com/65535/54155105453_f446209661_b.jpg";
+        String imageUrl4 = "https://live.staticflickr.com/65535/54155280525_67cef061a8_o.jpg";
 
         // Usar Glide para cargar la imagen en el ImageView
         Glide.with(this) // Usamos "this" para pasar el contexto de la actividad
-                .load(imageUrl5) // URL de la imagen
+                .load(imageUrl4) // URL de la imagen
                 .into(imageView16); // El ImageView donde se cargará la imagen
 
         // AQUI TERMINA LA CONFIGURACION DE GLIDE
 
-        //  LA SEXTA FOTO
+
+        //  LA QUINTA  FOTO
         // Obtener la referencia al ImageView con el ID "imageView2"
         ImageView imageView17 = findViewById(R.id.imageView17);
 
         // URL directa de la imagen que quieras usar
-        String imageUrl6 = "https://live.staticflickr.com/65535/54155143219_6b2be821cb_c.jpg";
+        String imageUrl5 = "https://live.staticflickr.com/65535/54155280500_9c792cb9b4_o.jpg";
 
         // Usar Glide para cargar la imagen en el ImageView
         Glide.with(this) // Usamos "this" para pasar el contexto de la actividad
-                .load(imageUrl6) // URL de la imagen
+                .load(imageUrl5) // URL de la imagen
                 .into(imageView17); // El ImageView donde se cargará la imagen
-
-        // AQUI TERMINA LA CONFIGURACION DE GLIDE
-
-
-        //  LA SEPTIMA FOTO
-        // Obtener la referencia al ImageView con el ID "imageView2"
-        ImageView imageView18 = findViewById(R.id.imageView18);
-
-        // URL directa de la imagen que quieras usar
-        String imageUrl7 = "https://live.staticflickr.com/65535/54155143224_e21aa968d3_o.jpg";
-
-        // Usar Glide para cargar la imagen en el ImageView
-        Glide.with(this) // Usamos "this" para pasar el contexto de la actividad
-                .load(imageUrl7) // URL de la imagen
-                .into(imageView18); // El ImageView donde se cargará la imagen
-
-        // AQUI TERMINA LA CONFIGURACION DE GLIDE
-
-        //  LA OCTAVA FOTO
-        // Obtener la referencia al ImageView con el ID "imageView2"
-        ImageView imageView19 = findViewById(R.id.imageView19);
-
-        // URL directa de la imagen que quieras usar
-        String imageUrl8 = "https://live.staticflickr.com/65535/54155279445_bd8d7655e7_o.png";
-
-        // Usar Glide para cargar la imagen en el ImageView
-        Glide.with(this) // Usamos "this" para pasar el contexto de la actividad
-                .load(imageUrl8) // URL de la imagen
-                .into(imageView19); // El ImageView donde se cargará la imagen
 
         // AQUI TERMINA LA CONFIGURACION DE GLIDE
 
@@ -220,20 +170,6 @@ public class PantallaHomeUramaki extends AppCompatActivity {
 
         // AQUI TERMINA LA CONFIGURACION DE GLIDE
 
-        //  LA CUARTA FOTO +-
-        // Obtener la referencia al ImageView con el ID "imageView2"
-        ImageView imageView25 = findViewById(R.id.imageView25);
-
-        // URL directa de la imagen que quieras usar
-        String imageUrl12 = "https://live.staticflickr.com/65535/54164340641_d863fe09cf_o.png";
-
-        // Usar Glide para cargar la imagen en el ImageView
-        Glide.with(this) // Usamos "this" para pasar el contexto de la actividad
-                .load(imageUrl12) // URL de la imagen
-                .into(imageView25); // El ImageView donde se cargará la imagen
-
-        // AQUI TERMINA LA CONFIGURACION DE GLIDE
-
         //  LA QUINTA FOTO +-
         // Obtener la referencia al ImageView con el ID "imageView2"
         ImageView imageView26 = findViewById(R.id.imageView26);
@@ -261,35 +197,6 @@ public class PantallaHomeUramaki extends AppCompatActivity {
                 .into(imageView27); // El ImageView donde se cargará la imagen
 
         // AQUI TERMINA LA CONFIGURACION DE GLIDE
-
-        //  LA SEPTIMA FOTO +-
-        // Obtener la referencia al ImageView con el ID "imageView2"
-        ImageView imageView28 = findViewById(R.id.imageView28);
-
-        // URL directa de la imagen que quieras usar
-        String imageUrl15 = "https://live.staticflickr.com/65535/54164340641_d863fe09cf_o.png";
-
-        // Usar Glide para cargar la imagen en el ImageView
-        Glide.with(this) // Usamos "this" para pasar el contexto de la actividad
-                .load(imageUrl15) // URL de la imagen
-                .into(imageView28); // El ImageView donde se cargará la imagen
-
-        // AQUI TERMINA LA CONFIGURACION DE GLIDE
-
-        //  LA ULTIMA FOTO +-
-        // Obtener la referencia al ImageView con el ID "imageView2"
-        ImageView imageView29 = findViewById(R.id.imageView29);
-
-        // URL directa de la imagen que quieras usar
-        String imageUrl16 = "https://live.staticflickr.com/65535/54164340641_d863fe09cf_o.png";
-
-        // Usar Glide para cargar la imagen en el ImageView
-        Glide.with(this) // Usamos "this" para pasar el contexto de la actividad
-                .load(imageUrl16) // URL de la imagen
-                .into(imageView29); // El ImageView donde se cargará la imagen
-
-        // AQUI TERMINA LA CONFIGURACION DE GLIDE
-
 
 
 

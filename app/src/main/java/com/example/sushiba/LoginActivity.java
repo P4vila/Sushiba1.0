@@ -1,7 +1,6 @@
 package com.example.sushiba;
 
-import static com.example.sushiba.R.id.imageView6;
-
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -9,9 +8,13 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.bumptech.glide.Glide;
+import com.example.sushiba.PantallaHomeUramaki;
+import com.example.sushiba.R;
+import com.example.sushiba.RegistroActivity;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -21,7 +24,7 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
 
-//CONFIGURACIÓN PARA QUE AL PULSAR EL TEXTO DE NO TIENES CUENTA, VAYA A LA ACTIVITY REGISTRO
+        //CONFIGURACIÓN PARA QUE AL PULSAR EL TEXTO DE NO TIENES CUENTA, VAYA A LA ACTIVITY REGISTRO
         TextView textRegistro = findViewById(R.id.textRegistro);
 
         textRegistro.setOnClickListener(new View.OnClickListener() {
@@ -49,6 +52,18 @@ public class LoginActivity extends AppCompatActivity {
         // AQUI TERMINA LA CONFIGURACION DE GLIDE
 
 
+        // Obtener la referencia al ImageView con el ID "imageView20"
+        ImageView imageView20 = findViewById(R.id.imageView20);
+
+        // URL directa de la imagen que quieras usar
+        String imageUrl2 = "https://live.staticflickr.com/65535/54164766056_88aa5b65f6_o.png";
+
+        // Usar Glide para cargar la imagen en el ImageView
+        Glide.with(this) // Usamos "this" para pasar el contexto de la actividad
+                .load(imageUrl2) // URL de la imagen
+                .into(imageView20); // El ImageView donde se cargará la imagen
+
+
         // Encuentro el botón en el xml de LoginActivity
         Button btnEntrar = findViewById(R.id.btnEntrar);
 
@@ -56,10 +71,27 @@ public class LoginActivity extends AppCompatActivity {
         btnEntrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Crea un Intent para abrir la nueva actividad PantallaHomeUramaki
-                Intent intent = new Intent(LoginActivity.this, PantallaHomeUramaki.class);
-                startActivity(intent);
+                // Primero, muestra el pop-up de bienvenida
+                showWelcomeDialog();
             }
         });
+    }
+
+    // Método para mostrar el pop-up de bienvenida
+    private void showWelcomeDialog() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
+        builder.setMessage("Bienvenido a Sushiba") // El mensaje del pop-up
+                .setCancelable(false) // No se puede cancelar tocando fuera del cuadro de diálogo
+                .setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int id) {
+                        // Después de hacer clic en "Aceptar", abre la actividad PantallaHomeUramaki
+                        Intent intent = new Intent(LoginActivity.this, PantallaHomeUramaki.class);
+                        startActivity(intent);
+                    }
+                });
+
+        // Crear y mostrar el diálogo
+        AlertDialog alert = builder.create();
+        alert.show();
     }
 }
