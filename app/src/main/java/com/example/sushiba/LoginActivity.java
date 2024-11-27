@@ -41,7 +41,7 @@ public class LoginActivity extends AppCompatActivity {
         // Obtener la referencia al ImageView con el ID "imageView2"
         ImageView imageView2 = findViewById(R.id.imageView2);
 
-        // URL directa de la imagen que quieras usar
+        // URL directa de la imagen que queremos usar
         String imageUrl = "https://live.staticflickr.com/65535/54156304544_65b4df6fbe_w.jpg";
 
         // Usar Glide para cargar la imagen en el ImageView
@@ -51,11 +51,11 @@ public class LoginActivity extends AppCompatActivity {
 
         // AQUI TERMINA LA CONFIGURACION DE GLIDE
 
-
+        // AQUI EMPIEZA LA CONFIGURACION DE GLIDE
         // Obtener la referencia al ImageView con el ID "imageView20"
         ImageView imageView20 = findViewById(R.id.imageView20);
 
-        // URL directa de la imagen que quieras usar
+        // URL directa de la imagen que queremos usar
         String imageUrl2 = "https://live.staticflickr.com/65535/54164766056_88aa5b65f6_o.png";
 
         // Usar Glide para cargar la imagen en el ImageView
@@ -63,11 +63,13 @@ public class LoginActivity extends AppCompatActivity {
                 .load(imageUrl2) // URL de la imagen
                 .into(imageView20); // El ImageView donde se cargará la imagen
 
+        // AQUI TERMINA LA CONFIGURACION DE GLIDE
+
 
         // Encuentro el botón en el xml de LoginActivity
         Button btnEntrar = findViewById(R.id.btnEntrar);
 
-        // Configuro un listener para el botón
+        // Configuro un listener para el botón entrar
         btnEntrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -77,7 +79,7 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 
-    // Método para mostrar el pop-up de bienvenida
+    // Método para mostrar el pop-up de bienvenida a modo de confirmación de que el Login de usuario ha sido exitoso
     private void showWelcomeDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(LoginActivity.this);
         builder.setMessage("Bienvenido a Sushiba") // El mensaje del pop-up

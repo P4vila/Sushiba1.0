@@ -9,40 +9,42 @@
 
     <!-- BottomNavigationView -->
 
+    <!-- LINEAR LAYOUT SUPERIOR QUE CONTENDRÁ LOS BOTONES DE NAVEGACIÓN ENTRE CATEGORIAS -->
 
+    <!--VISTA DEL MENÚ NAVEGACIÓN INFERIOR  -->
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="0dp"
         tools:layout_editor_absoluteY="0dp">
 
-        <!-- Barra de navegación con tres botones -->
+        <!-- "Barra" de navegación con tres botones -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="47dp"
             android:backgroundTint="@color/white"
             android:orientation="horizontal"
             android:padding="10dp"
-            android:paddingTop="5dp"> <!-- Ajusta este valor para mover los botones hacia arriba -->
+            android:paddingTop="5dp"> <!-- ESPACIO DE MARGEN SUPERIOR -->
 
-            <!-- Botón Uramaki -->
+            <!-- BOTÓN URAMAKI -->
             <Button
                 android:id="@+id/btnUramaki"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:backgroundTint="#A5D6A7"
                 android:ellipsize="none"
                 android:gravity="center"
                 android:minWidth="85dp"
-                android:backgroundTint="#A5D6A7"
                 android:padding="2dp"
                 android:text="Uramaki"
-                android:textColor="#000000"/>
+                android:textColor="#000000" />
 
-            <!-- Botón Fritos -->
 
-            <!-- Botón Nigiri -->
+            <!-- BOTÓN FRITOS -->
             <Button
                 android:id="@+id/btnFritos"
                 android:layout_width="0dp"
@@ -56,22 +58,22 @@
                 android:text="Fritos"
                 android:textColor="#000000" />
 
+            <!--BOTÓN NIGIRI -->
             <Button
                 android:id="@+id/btnNigiri"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:backgroundTint="#A5D6A7"
                 android:ellipsize="none"
                 android:gravity="center"
                 android:minWidth="85dp"
-                android:backgroundTint="#A5D6A7"
                 android:padding="2dp"
                 android:text="Nigiri"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black" />
 
         </LinearLayout>
     </LinearLayout>
-
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
@@ -166,6 +168,8 @@
         app:layout_constraintTop_toBottomOf="@+id/view6"
         app:layout_constraintVertical_bias="0.44" />
 
+
+    <!--FOTOS DE LOS PRODUCTOS PARA USO DE GLIDE EN CLASS -->
     <ImageView
         android:id="@+id/imageView12"
         android:layout_width="136dp"
@@ -190,6 +194,8 @@
         app:layout_constraintVertical_bias="0.0"
         tools:srcCompat="@tools:sample/avatars" />
 
+
+    <!--TEXT DE NOMBRES , PRECIOS  -->
     <TextView
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
@@ -218,6 +224,8 @@
         app:layout_constraintStart_toStartOf="@+id/view"
         app:layout_constraintTop_toTopOf="parent" />
 
+
+    <!--BOTON PARA PEDIR , FUNCIONAL EN EL FUTURO CUANDO SE HAGA USO DE BBDD -->
     <Button
         android:id="@+id/button"
         android:layout_width="85dp"
@@ -416,7 +424,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/roboto_regular"
-        android:text="Nigiri Pollo Flameado"
+        android:text="Nigiri Pollo"
         android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="@+id/view9"
         app:layout_constraintEnd_toEndOf="@+id/view9"
@@ -517,6 +525,8 @@
         app:layout_constraintTop_toTopOf="@+id/view8"
         app:layout_constraintVertical_bias="0.956" />
 
+
+    <!--FOTO DE CANTIDADES, INCREMENTO Y DRECEMENTO CON GLIDE PARA SIMULAR FUNCIÓN FUTURA -->
     <ImageView
         android:id="@+id/imageView22"
         android:layout_width="47dp"
@@ -586,6 +596,68 @@
         app:layout_constraintTop_toTopOf="@+id/view8"
         app:layout_constraintVertical_bias="1.0"
         tools:srcCompat="@tools:sample/avatars" />
+
+    <!-- LINEAR LAYOUT INFERIOR QUE CONTIENE LO QUE EL MENÚ NO NOS DEJABA -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!-- Botón Home -->
+        <Button
+            android:id="@+id/btnHome"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/verde_claro"
+            android:text="Home"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:padding="2dp" />
+
+        <!-- Botón Carro -->
+        <Button
+            android:id="@+id/btnCarro"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/verde_claro"
+            android:text="Carro"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:padding="2dp" />
+
+        <!-- Botón Info -->
+        <Button
+            android:id="@+id/btnInfo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/verde_claro"
+            android:text="Info"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:padding="2dp" />
+
+        <!-- Botón Perfil -->
+        <Button
+            android:id="@+id/btnPerfil"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/verde_claro"
+            android:text="Perfil"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:padding="2dp" />
+    </LinearLayout>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

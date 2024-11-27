@@ -11,17 +11,7 @@
     >
 
 
-    <!-- Fuente --><![CDATA[
-        android:textStyle="SemiBold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.063" />
-
-    ]]>
-
-    <!-- TITULO DE METODO DE PAGO-->
+    <!-- TEXT TITULO DE METODO DE PAGO-->
 
 
     <TextView
@@ -101,14 +91,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.548" />
 
-    <!-- Tamaño de letra -->
-        android:fontFamily="Montserrat"   <!-- Fuente -->
-        android:textStyle="SemiBold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.117" />
 
 
    <!--METODO DE PAGO CASH-->
@@ -126,7 +108,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.656" />
 
-    <!--IMAGEN DE VISA -->
+
+
 
     <!--IMAGEN DE PAYPAL-->
 
@@ -225,6 +208,7 @@
 
     <!-- BOTON DE CONFIRMAR PAGO -->
 
+
     <Button
         android:id="@+id/btn_confirmar_pago"
         android:layout_width="250dp"
@@ -237,14 +221,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.602"
+        app:layout_constraintHorizontal_bias="0.521"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.857" />
-
-
-
-
+        app:layout_constraintVertical_bias="0.778" />
 
     <ImageView
         android:layout_width="49dp"
@@ -326,7 +306,66 @@
         app:menu="@menu/bottom_navigation_menu"
         tools:layout_editor_absoluteX="-4dp" />
 
+    <!-- LINEAR LAYOUT INFERIOR QUE CONTIENE LO QUE EL MENÚ NO NOS DEJABA -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
+        <!-- Botón Home -->
+        <Button
+            android:id="@+id/btnHome"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/verde_claro"
+            android:text="Home"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:padding="2dp" />
+
+        <!-- Botón Carro -->
+        <Button
+            android:id="@+id/btnCarro"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/verde_claro"
+            android:text="Carro"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:padding="2dp" />
+
+        <!-- Botón Info -->
+        <Button
+            android:id="@+id/btnInfo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/verde_claro"
+            android:text="Info"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:padding="2dp" />
+
+        <!-- Botón Perfil -->
+        <Button
+            android:id="@+id/btnPerfil"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/verde_claro"
+            android:text="Perfil"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:padding="2dp" />
+    </LinearLayout>
 
 
 

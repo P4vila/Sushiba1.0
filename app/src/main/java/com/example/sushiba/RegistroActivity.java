@@ -22,7 +22,7 @@ public class RegistroActivity extends AppCompatActivity {
         EdgeToEdge.enable(this); // Configura el modo Edge-to-Edge
         setContentView(R.layout.activity_registro);
 
-        // Configurar Glide para las imágenes
+        // Configuración de  Glide para las imágenes
         ImageView imageView20 = findViewById(R.id.imageView20);
         String imageUrl2 = "https://live.staticflickr.com/65535/54164766056_88aa5b65f6_o.png";
         Glide.with(this).load(imageUrl2).into(imageView20);
@@ -31,7 +31,7 @@ public class RegistroActivity extends AppCompatActivity {
         String imageUrl = "https://live.staticflickr.com/65535/54156304544_65b4df6fbe_w.jpg";
         Glide.with(this).load(imageUrl).into(imageView2);
 
-        // Configurar el TextView para redirigir al LoginActivity
+        // Configuración de  el TextView para redirigir al LoginActivity
         TextView tvAlreadyHaveAccount = findViewById(R.id.textRegistro);
         tvAlreadyHaveAccount.setOnClickListener(v -> {
             Intent intent = new Intent(RegistroActivity.this, LoginActivity.class);
@@ -39,7 +39,7 @@ public class RegistroActivity extends AppCompatActivity {
             finish(); // Finaliza la actividad de registro para que el usuario no pueda regresar
         });
 
-        // Configurar el botón de registro
+        // Configuramos el botón de registro
         Button btnRegistrar = findViewById(R.id.btnEntrar);
         btnRegistrar.setOnClickListener(v -> {
             // Aquí puedes agregar la lógica para registrar al usuario

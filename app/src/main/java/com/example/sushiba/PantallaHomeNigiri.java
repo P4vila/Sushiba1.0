@@ -22,8 +22,9 @@ public class PantallaHomeNigiri extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_pantalla_home_nigiri);
 
+        //LINEAR LAYOUT SUPERIOR
 
-        // Vincula los botones
+        // Vincula los botones del menú del linear layout superior
         Button btnUramaki = findViewById(R.id.btnUramaki);
         Button btnFritos = findViewById(R.id.btnFritos);
         Button btnNigiri = findViewById(R.id.btnNigiri);
@@ -56,11 +57,52 @@ public class PantallaHomeNigiri extends AppCompatActivity {
             }
         });
 
+        //LINEAR LAYOUT INFERIOR
+
+        // Referenciar los botones del layout
+        Button btnHome = findViewById(R.id.btnHome);
+        Button btnCarro = findViewById(R.id.btnCarro);
+        Button btnInfo = findViewById(R.id.btnInfo);
+        Button btnPerfil = findViewById(R.id.btnPerfil);
+
+        // Configurar cada botón para abrir la actividad correspondiente
+        btnHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(PantallaHomeNigiri.this, PantallaHomeUramaki.class);
+                startActivity(intent);
+            }
+        });
+
+        btnCarro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(PantallaHomeNigiri.this, mi_carrito.class);
+                startActivity(intent);
+            }
+        });
+
+        btnInfo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(PantallaHomeNigiri.this, soporte_ayuda.class);
+                startActivity(intent);
+            }
+        });
+
+        btnPerfil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(PantallaHomeNigiri.this, Activity_perfil.class);
+                startActivity(intent);
+            }
+        });
 
 
+        // AQUI EMPIEZA LA CONFIGURACION DE GLIDE
 
         //  LA PRIMERA FOTO
-        // Obtener la referencia al ImageView con el ID "imageView2"
+        // Obtener la referencia al ImageView con el ID "imageView12"
         ImageView imageView12 = findViewById(R.id.imageView12);
 
         // URL directa de la imagen que quieras usar
@@ -73,8 +115,10 @@ public class PantallaHomeNigiri extends AppCompatActivity {
 
         // AQUI TERMINA LA CONFIGURACION DE GLIDE
 
+
+        // AQUI EMPIEZA LA CONFIGURACION DE GLIDE
         // LA SEGUNDA FOTO
-        // Obtener la referencia al ImageView con el ID "imageView2"
+        // Obtener la referencia al ImageView con el ID "imageView13"
         ImageView imageView13 = findViewById(R.id.imageView13);
 
         // URL directa de la imagen que quieras usar
@@ -87,8 +131,10 @@ public class PantallaHomeNigiri extends AppCompatActivity {
 
         // AQUI TERMINA LA CONFIGURACION DE GLIDE
 
+
+        // AQUI EMPIEZA LA CONFIGURACION DE GLIDE
         //  LA TERCERA FOTO
-        // Obtener la referencia al ImageView con el ID "imageView2"
+        // Obtener la referencia al ImageView con el ID "imageView14"
         ImageView imageView14 = findViewById(R.id.imageView14);
 
         // URL directa de la imagen que quieras usar
@@ -101,8 +147,10 @@ public class PantallaHomeNigiri extends AppCompatActivity {
 
         // AQUI TERMINA LA CONFIGURACION DE GLIDE
 
+
+        // AQUI EMPIEZA LA CONFIGURACION DE GLIDE
         //  LA CUARTA  FOTO
-        // Obtener la referencia al ImageView con el ID "imageView2"
+        // Obtener la referencia al ImageView con el ID "imageView16"
         ImageView imageView16 = findViewById(R.id.imageView16);
 
         // URL directa de la imagen que quieras usar
@@ -116,8 +164,9 @@ public class PantallaHomeNigiri extends AppCompatActivity {
         // AQUI TERMINA LA CONFIGURACION DE GLIDE
 
 
+        // AQUI EMPIEZA LA CONFIGURACION DE GLIDE
         //  LA QUINTA  FOTO
-        // Obtener la referencia al ImageView con el ID "imageView2"
+        // Obtener la referencia al ImageView con el ID "imageView17"
         ImageView imageView17 = findViewById(R.id.imageView17);
 
         // URL directa de la imagen que quieras usar
@@ -130,8 +179,10 @@ public class PantallaHomeNigiri extends AppCompatActivity {
 
         // AQUI TERMINA LA CONFIGURACION DE GLIDE
 
+
+        // AQUI EMPIEZA LA CONFIGURACION DE GLIDE
         //  LA SEXTA FOTO
-        // Obtener la referencia al ImageView con el ID "imageView2"
+        // Obtener la referencia al ImageView con el ID "imageView18"
         ImageView imageView18 = findViewById(R.id.imageView18);
 
         // URL directa de la imagen que quieras usar
@@ -145,8 +196,9 @@ public class PantallaHomeNigiri extends AppCompatActivity {
         // AQUI TERMINA LA CONFIGURACION DE GLIDE
 
 
+        // AQUI EMPIEZA LA CONFIGURACION DE GLIDE
         //  LA PRIMERA FOTO +-
-        // Obtener la referencia al ImageView con el ID "imageView2"
+        // Obtener la referencia al ImageView con el ID "imageView22"
         ImageView imageView20 = findViewById(R.id.imageView22);
 
         // URL directa de la imagen que quieras usar
@@ -159,8 +211,10 @@ public class PantallaHomeNigiri extends AppCompatActivity {
 
         // AQUI TERMINA LA CONFIGURACION DE GLIDE
 
+
+        // AQUI EMPIEZA LA CONFIGURACION DE GLIDE
         //  LA SEGUNDA FOTO +-
-        // Obtener la referencia al ImageView con el ID "imageView2"
+        // Obtener la referencia al ImageView con el ID "imageView23"
         ImageView imageView23 = findViewById(R.id.imageView23);
 
         // URL directa de la imagen que quieras usar
@@ -173,8 +227,9 @@ public class PantallaHomeNigiri extends AppCompatActivity {
 
         // AQUI TERMINA LA CONFIGURACION DE GLIDE
 
+        // AQUI EMPIEZA LA CONFIGURACION DE GLIDE
         //  LA TERCERA FOTO +-
-        // Obtener la referencia al ImageView con el ID "imageView2"
+        // Obtener la referencia al ImageView con el ID "imageView24"
         ImageView imageView24 = findViewById(R.id.imageView24);
 
         // URL directa de la imagen que quieras usar
@@ -187,8 +242,10 @@ public class PantallaHomeNigiri extends AppCompatActivity {
 
         // AQUI TERMINA LA CONFIGURACION DE GLIDE
 
+
+        // AQUI EMPIEZA LA CONFIGURACION DE GLIDE
         //  LA QUINTA FOTO +-
-        // Obtener la referencia al ImageView con el ID "imageView2"
+        // Obtener la referencia al ImageView con el ID "imageView26"
         ImageView imageView26 = findViewById(R.id.imageView26);
 
         // URL directa de la imagen que quieras usar
@@ -201,8 +258,10 @@ public class PantallaHomeNigiri extends AppCompatActivity {
 
         // AQUI TERMINA LA CONFIGURACION DE GLIDE
 
+
+        // AQUI EMPIEZA LA CONFIGURACION DE GLIDE
         //  LA SEXTA FOTO +-
-        // Obtener la referencia al ImageView con el ID "imageView2"
+        // Obtener la referencia al ImageView con el ID "imageView27"
         ImageView imageView27 = findViewById(R.id.imageView27);
 
         // URL directa de la imagen que quieras usar
@@ -215,8 +274,10 @@ public class PantallaHomeNigiri extends AppCompatActivity {
 
         // AQUI TERMINA LA CONFIGURACION DE GLIDE
 
+
+        // AQUI EMPIEZA LA CONFIGURACION DE GLIDE
         //  LA SEPTIMA FOTO +-
-        // Obtener la referencia al ImageView con el ID "imageView2"
+        // Obtener la referencia al ImageView con el ID "imageView28"
         ImageView imageView28 = findViewById(R.id.imageView28);
 
         // URL directa de la imagen que quieras usar

@@ -8,10 +8,9 @@
 
 
 
-    <!-- ImageView debe estar sobre el View -->
 
-    <!-- TextView sigue a la misma jerarquía -->
 
+    <!--LOGO DE LA APP -->
 
     <ImageView
         android:id="@+id/imageView2"
@@ -25,6 +24,8 @@
         app:layout_constraintVertical_bias="0.0"
         tools:srcCompat="@tools:sample/avatars" />
 
+
+    <!--TEXTO LOGIN -->
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
@@ -38,6 +39,8 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
         app:layout_constraintVertical_bias="0.064" />
 
+
+    <!--INPUT TEXT PARA EMAIL -->
     <EditText
         android:id="@+id/txtEmail"
         android:layout_width="281dp"
@@ -53,6 +56,8 @@
         app:layout_constraintTop_toBottomOf="@+id/textView3"
         app:layout_constraintVertical_bias="0.005" />
 
+
+    <!--INPUT TEXT PARA CONTRASEÑA -->
     <EditText
         android:id="@+id/txtpassword"
         android:layout_width="281dp"
@@ -68,6 +73,8 @@
         app:layout_constraintTop_toBottomOf="@+id/txtEmail"
         app:layout_constraintVertical_bias="0.0" />
 
+
+    <!--BOTÓN ENTRAR (LOGUEARSE) -->
     <Button
         android:id="@+id/btnEntrar"
         android:layout_width="164dp"
@@ -81,7 +88,7 @@
         app:layout_constraintTop_toBottomOf="@+id/txtpassword"
         app:layout_constraintVertical_bias="0.388" />
 
-
+    <!--TEXTO INTERACTIVO PARA REGISTRARSE -->
     <TextView
         android:id="@+id/textRegistro"
         android:layout_width="wrap_content"
@@ -101,6 +108,8 @@
         app:layout_constraintTop_toBottomOf="@+id/btnEntrar"
         app:layout_constraintVertical_bias="0.137" />
 
+
+    <!--TEXTO INTERACTIVO A IMPLEMENTAR CUANDO EXISTA UNA BBBD Y RECUPERAR CONTRASEÑA -->
     <TextView
         android:id="@+id/textOlvidada"
         android:layout_width="wrap_content"
@@ -120,6 +129,8 @@
         app:layout_constraintTop_toBottomOf="@+id/textRegistro"
         app:layout_constraintVertical_bias="0.184" />
 
+
+    <!--IMAGEN CON GLIDE, PARA FUTURA IMPLEMENTACIÓN DE LOGIN CON GOOGLE ACCOUNT O FACEBOOK -->
     <ImageView
         android:id="@+id/imageView20"
         android:layout_width="422dp"
@@ -131,7 +142,7 @@
         tools:srcCompat="@tools:sample/avatars" />
 
 
-    <!-- View que se coloca debajo del ImageView -->
+    <!--  (NO IMPLEMENTADO) View que se coloca debajo del ImageView dando profundidad-->
    <!-- <View
         android:id="@+id/view2"
         android:layout_width="323dp"

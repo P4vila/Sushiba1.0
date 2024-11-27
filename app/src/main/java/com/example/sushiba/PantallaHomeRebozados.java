@@ -22,7 +22,9 @@ public class PantallaHomeRebozados extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_pantalla_home_rebozados);
 
-        // Vincula los botones
+        //LINEAR LAYOUT SUPERIOR
+
+        // Vincula los botones del linear layout
         Button btnUramaki = findViewById(R.id.btnUramaki);
         Button btnFritos = findViewById(R.id.btnFritos);
         Button btnNigiri = findViewById(R.id.btnNigiri);
@@ -55,8 +57,49 @@ public class PantallaHomeRebozados extends AppCompatActivity {
             }
         });
 
+        //LINEAR LAYOUT INFERIOR
+
+        // Referenciar los botones del layout
+        Button btnHome = findViewById(R.id.btnHome);
+        Button btnCarro = findViewById(R.id.btnCarro);
+        Button btnInfo = findViewById(R.id.btnInfo);
+        Button btnPerfil = findViewById(R.id.btnPerfil);
+
+        // Configurar cada botón para abrir la actividad correspondiente
+        btnHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(PantallaHomeRebozados.this, PantallaHomeUramaki.class);
+                startActivity(intent);
+            }
+        });
+
+        btnCarro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(PantallaHomeRebozados.this, mi_carrito.class);
+                startActivity(intent);
+            }
+        });
+
+        btnInfo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(PantallaHomeRebozados.this, soporte_ayuda.class);
+                startActivity(intent);
+            }
+        });
+
+        btnPerfil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(PantallaHomeRebozados.this, Activity_perfil.class);
+                startActivity(intent);
+            }
+        });
 
 
+        // AQUI EMPIEZA LA CONFIGURACION DE GLIDE
         //  LA PRIMERA FOTO
         // Obtener la referencia al ImageView con el ID "imageView2"
         ImageView imageView12 = findViewById(R.id.imageView12);
@@ -71,6 +114,8 @@ public class PantallaHomeRebozados extends AppCompatActivity {
 
         // AQUI TERMINA LA CONFIGURACION DE GLIDE
 
+
+        // AQUI EMPIEZA LA CONFIGURACION DE GLIDE
         // LA SEGUNDA FOTO
         // Obtener la referencia al ImageView con el ID "imageView2"
         ImageView imageView13 = findViewById(R.id.imageView13);
@@ -85,6 +130,8 @@ public class PantallaHomeRebozados extends AppCompatActivity {
 
         // AQUI TERMINA LA CONFIGURACION DE GLIDE
 
+
+        // AQUI EMPIEZA LA CONFIGURACION DE GLIDE
         //  LA TERCERA FOTO
         // Obtener la referencia al ImageView con el ID "imageView2"
         ImageView imageView14 = findViewById(R.id.imageView14);
@@ -99,6 +146,7 @@ public class PantallaHomeRebozados extends AppCompatActivity {
 
         // AQUI TERMINA LA CONFIGURACION DE GLIDE
 
+        // AQUI EMPIEZA LA CONFIGURACION DE GLIDE
         //  LA CUARTA  FOTO
         // Obtener la referencia al ImageView con el ID "imageView2"
         ImageView imageView16 = findViewById(R.id.imageView16);
@@ -114,6 +162,7 @@ public class PantallaHomeRebozados extends AppCompatActivity {
         // AQUI TERMINA LA CONFIGURACION DE GLIDE
 
 
+        // AQUI EMPIEZA LA CONFIGURACION DE GLIDE
         //  LA QUINTA  FOTO
         // Obtener la referencia al ImageView con el ID "imageView2"
         ImageView imageView17 = findViewById(R.id.imageView17);
@@ -128,6 +177,8 @@ public class PantallaHomeRebozados extends AppCompatActivity {
 
         // AQUI TERMINA LA CONFIGURACION DE GLIDE
 
+
+        // AQUI EMPIEZA LA CONFIGURACION DE GLIDE
         //  LA PRIMERA FOTO +-
         // Obtener la referencia al ImageView con el ID "imageView2"
         ImageView imageView20 = findViewById(R.id.imageView22);
@@ -142,6 +193,8 @@ public class PantallaHomeRebozados extends AppCompatActivity {
 
         // AQUI TERMINA LA CONFIGURACION DE GLIDE
 
+
+        // AQUI EMPIEZA LA CONFIGURACION DE GLIDE
         //  LA SEGUNDA FOTO +-
         // Obtener la referencia al ImageView con el ID "imageView2"
         ImageView imageView23 = findViewById(R.id.imageView23);
@@ -156,6 +209,8 @@ public class PantallaHomeRebozados extends AppCompatActivity {
 
         // AQUI TERMINA LA CONFIGURACION DE GLIDE
 
+
+        // AQUI EMPIEZA LA CONFIGURACION DE GLIDE
         //  LA TERCERA FOTO +-
         // Obtener la referencia al ImageView con el ID "imageView2"
         ImageView imageView24 = findViewById(R.id.imageView24);
@@ -170,7 +225,9 @@ public class PantallaHomeRebozados extends AppCompatActivity {
 
         // AQUI TERMINA LA CONFIGURACION DE GLIDE
 
-        //  LA QUINTA FOTO +-
+
+        // AQUI EMPIEZA LA CONFIGURACION DE GLIDE
+        //  LA CUARTA FOTO +-
         // Obtener la referencia al ImageView con el ID "imageView2"
         ImageView imageView26 = findViewById(R.id.imageView26);
 
@@ -184,7 +241,9 @@ public class PantallaHomeRebozados extends AppCompatActivity {
 
         // AQUI TERMINA LA CONFIGURACION DE GLIDE
 
-        //  LA SEXTA FOTO +-
+
+        // AQUI EMPIEZA LA CONFIGURACION DE GLIDE
+        //  LA QUINTA FOTO +-
         // Obtener la referencia al ImageView con el ID "imageView2"
         ImageView imageView27 = findViewById(R.id.imageView27);
 

@@ -15,6 +15,8 @@
     CASO LA IMAGEN ESTÁ PRIMERA EN EL DISEÑO Y PRIMERA EN EL
     XML -->
 
+
+    <!--LOGO DE LA APP A MODO DE PANTALLA DE CARGA-->
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="362dp"
@@ -27,6 +29,8 @@
         app:layout_constraintVertical_bias="0.168"
         app:srcCompat="@drawable/logosinfondo" />
 
+
+    <!--TEXT VERSION DE LA APP-->
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -39,6 +43,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.932" />
+
+    <!--TEXT CON NUESTROS NOMBRES (LOS DESARROLLADORES)-->
 
     <TextView
         android:id="@+id/textView2"

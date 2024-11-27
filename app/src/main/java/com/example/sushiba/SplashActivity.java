@@ -19,6 +19,16 @@ public class SplashActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_splash);
 
+
+
+        /**
+         * SplashActivity: Clase que representa la pantalla de bienvenida de la aplicación.
+         * Se muestra al usuario al iniciar la app y permanece visible por un breve periodo antes
+         * de redirigir a la pantalla de inicio de sesión (LoginActivity).
+         */
+
+
+
         new Handler(Looper.getMainLooper()).postDelayed(new Runnable() {
             @Override
             public void run() {

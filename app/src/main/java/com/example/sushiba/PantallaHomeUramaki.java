@@ -29,11 +29,14 @@ public class PantallaHomeUramaki extends AppCompatActivity {
      //   MENÚ DE NAVEGACIÓN
             BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
         // PREGUNTAR JUAN COMO ASOCIAR ITEMS DEL MENU NAV A LAS ACTIVITIES
+        //COMO HABLAMOS EN CLASE, DEJAREMOS LA VISTA DEL MENÚ EN TODAS LAS ACTIVITIES QUE LO QUEREMOS USAR
+        //A FALTA DE SABER IMPLEMENTAR DESPUÉS DE LOS ERRORES QUE VIMOS, VAMOS A CONFIGURAR UN LINEARLAYOUT CON BOTONES PARA NAVEGAR ENTRE LAS ACTIVITY
+        //SIMULANDO UN FRAGMENT
 
 
+        //LINEAR LAYOUT SUPERIOR
 
-
-        // Vincula los botones
+        // Vincula los botones del linear layout
         Button btnUramaki = findViewById(R.id.btnUramaki);
         Button btnFritos = findViewById(R.id.btnFritos);
         Button btnNigiri = findViewById(R.id.btnNigiri);
@@ -65,6 +68,49 @@ public class PantallaHomeUramaki extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        //LINEAR LAYOUT INFERIOR
+
+        // Referenciar los botones del layout
+        Button btnHome = findViewById(R.id.btnHome);
+        Button btnCarro = findViewById(R.id.btnCarro);
+        Button btnInfo = findViewById(R.id.btnInfo);
+        Button btnPerfil = findViewById(R.id.btnPerfil);
+
+        // Configurar cada botón para abrir la actividad correspondiente
+        btnHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(PantallaHomeUramaki.this, PantallaHomeUramaki.class);
+                startActivity(intent);
+            }
+        });
+
+        btnCarro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(PantallaHomeUramaki.this, mi_carrito.class);
+                startActivity(intent);
+            }
+        });
+
+        btnInfo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(PantallaHomeUramaki.this, soporte_ayuda.class);
+                startActivity(intent);
+            }
+        });
+
+        btnPerfil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(PantallaHomeUramaki.this, Activity_perfil.class);
+                startActivity(intent);
+            }
+        });
+
+        // AQUI EMPIEZA LA CONFIGURACION DE GLIDE
         //  LA PRIMERA FOTO
         // Obtener la referencia al ImageView con el ID "imageView2"
             ImageView imageView12 = findViewById(R.id.imageView12);
@@ -79,6 +125,8 @@ public class PantallaHomeUramaki extends AppCompatActivity {
 
         // AQUI TERMINA LA CONFIGURACION DE GLIDE
 
+
+        // AQUI EMPIEZA LA CONFIGURACION DE GLIDE
         // LA SEGUNDA FOTO
         // Obtener la referencia al ImageView con el ID "imageView2"
             ImageView imageView13 = findViewById(R.id.imageView13);
@@ -93,6 +141,8 @@ public class PantallaHomeUramaki extends AppCompatActivity {
 
         // AQUI TERMINA LA CONFIGURACION DE GLIDE
 
+
+        // AQUI EMPIEZA LA CONFIGURACION DE GLIDE
         //  LA TERCERA FOTO
         // Obtener la referencia al ImageView con el ID "imageView2"
               ImageView imageView14 = findViewById(R.id.imageView14);
@@ -107,6 +157,8 @@ public class PantallaHomeUramaki extends AppCompatActivity {
 
         // AQUI TERMINA LA CONFIGURACION DE GLIDE
 
+
+        // AQUI EMPIEZA LA CONFIGURACION DE GLIDE
         //  LA CUARTA FOTO
         // Obtener la referencia al ImageView con el ID "imageView2"
              ImageView imageView15 = findViewById(R.id.imageView15);
@@ -121,6 +173,8 @@ public class PantallaHomeUramaki extends AppCompatActivity {
 
         // AQUI TERMINA LA CONFIGURACION DE GLIDE
 
+
+        // AQUI EMPIEZA LA CONFIGURACION DE GLIDE
         //  LA QUINTA FOTO
         // Obtener la referencia al ImageView con el ID "imageView2"
         ImageView imageView16 = findViewById(R.id.imageView16);
@@ -135,6 +189,8 @@ public class PantallaHomeUramaki extends AppCompatActivity {
 
         // AQUI TERMINA LA CONFIGURACION DE GLIDE
 
+
+        // AQUI EMPIEZA LA CONFIGURACION DE GLIDE
         //  LA SEXTA FOTO
         // Obtener la referencia al ImageView con el ID "imageView2"
         ImageView imageView17 = findViewById(R.id.imageView17);
@@ -149,7 +205,7 @@ public class PantallaHomeUramaki extends AppCompatActivity {
 
         // AQUI TERMINA LA CONFIGURACION DE GLIDE
 
-
+        // AQUI EMPIEZA LA CONFIGURACION DE GLIDE
         //  LA SEPTIMA FOTO
         // Obtener la referencia al ImageView con el ID "imageView2"
         ImageView imageView18 = findViewById(R.id.imageView18);
@@ -164,6 +220,8 @@ public class PantallaHomeUramaki extends AppCompatActivity {
 
         // AQUI TERMINA LA CONFIGURACION DE GLIDE
 
+
+        // AQUI EMPIEZA LA CONFIGURACION DE GLIDE
         //  LA OCTAVA FOTO
         // Obtener la referencia al ImageView con el ID "imageView2"
         ImageView imageView19 = findViewById(R.id.imageView19);
@@ -178,6 +236,7 @@ public class PantallaHomeUramaki extends AppCompatActivity {
 
         // AQUI TERMINA LA CONFIGURACION DE GLIDE
 
+        // AQUI EMPIEZA LA CONFIGURACION DE GLIDE
         //  LA PRIMERA FOTO +-
         // Obtener la referencia al ImageView con el ID "imageView2"
         ImageView imageView20 = findViewById(R.id.imageView22);
@@ -192,6 +251,7 @@ public class PantallaHomeUramaki extends AppCompatActivity {
 
         // AQUI TERMINA LA CONFIGURACION DE GLIDE
 
+        // AQUI EMPIEZA LA CONFIGURACION DE GLIDE
         //  LA SEGUNDA FOTO +-
         // Obtener la referencia al ImageView con el ID "imageView2"
         ImageView imageView23 = findViewById(R.id.imageView23);
@@ -206,6 +266,7 @@ public class PantallaHomeUramaki extends AppCompatActivity {
 
         // AQUI TERMINA LA CONFIGURACION DE GLIDE
 
+        // AQUI EMPIEZA LA CONFIGURACION DE GLIDE
         //  LA TERCERA FOTO +-
         // Obtener la referencia al ImageView con el ID "imageView2"
         ImageView imageView24 = findViewById(R.id.imageView24);
@@ -220,6 +281,7 @@ public class PantallaHomeUramaki extends AppCompatActivity {
 
         // AQUI TERMINA LA CONFIGURACION DE GLIDE
 
+        // AQUI EMPIEZA LA CONFIGURACION DE GLIDE
         //  LA CUARTA FOTO +-
         // Obtener la referencia al ImageView con el ID "imageView2"
         ImageView imageView25 = findViewById(R.id.imageView25);
@@ -234,6 +296,7 @@ public class PantallaHomeUramaki extends AppCompatActivity {
 
         // AQUI TERMINA LA CONFIGURACION DE GLIDE
 
+        // AQUI EMPIEZA LA CONFIGURACION DE GLIDE
         //  LA QUINTA FOTO +-
         // Obtener la referencia al ImageView con el ID "imageView2"
         ImageView imageView26 = findViewById(R.id.imageView26);
@@ -248,6 +311,7 @@ public class PantallaHomeUramaki extends AppCompatActivity {
 
         // AQUI TERMINA LA CONFIGURACION DE GLIDE
 
+        // AQUI EMPIEZA LA CONFIGURACION DE GLIDE
         //  LA SEXTA FOTO +-
         // Obtener la referencia al ImageView con el ID "imageView2"
         ImageView imageView27 = findViewById(R.id.imageView27);
@@ -262,6 +326,7 @@ public class PantallaHomeUramaki extends AppCompatActivity {
 
         // AQUI TERMINA LA CONFIGURACION DE GLIDE
 
+        // AQUI EMPIEZA LA CONFIGURACION DE GLIDE
         //  LA SEPTIMA FOTO +-
         // Obtener la referencia al ImageView con el ID "imageView2"
         ImageView imageView28 = findViewById(R.id.imageView28);
@@ -276,6 +341,7 @@ public class PantallaHomeUramaki extends AppCompatActivity {
 
         // AQUI TERMINA LA CONFIGURACION DE GLIDE
 
+        // AQUI EMPIEZA LA CONFIGURACION DE GLIDE
         //  LA ULTIMA FOTO +-
         // Obtener la referencia al ImageView con el ID "imageView2"
         ImageView imageView29 = findViewById(R.id.imageView29);

@@ -24,8 +24,50 @@ public class soporte_ayuda extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_soporte_ayuda);
 
+        //LINEAR LAYOUT INFERIOR
 
-        // Referenciar el botón
+        // Referenciar los botones del layout
+        Button btnHome = findViewById(R.id.btnHome);
+        Button btnCarro = findViewById(R.id.btnCarro);
+        Button btnInfo = findViewById(R.id.btnInfo);
+        Button btnPerfil = findViewById(R.id.btnPerfil);
+
+        // Configurar cada botón para abrir la actividad correspondiente
+        btnHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(soporte_ayuda.this, PantallaHomeUramaki.class);
+                startActivity(intent);
+            }
+        });
+
+        btnCarro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(soporte_ayuda.this, mi_carrito.class);
+                startActivity(intent);
+            }
+        });
+
+        btnInfo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(soporte_ayuda.this, soporte_ayuda.class);
+                startActivity(intent);
+            }
+        });
+
+        btnPerfil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(soporte_ayuda.this, Activity_perfil.class);
+                startActivity(intent);
+            }
+        });
+
+
+
+        // Referenciamos el botón
         Button btnAyudaAMesa = findViewById(R.id.btnmaestro);
 
 
